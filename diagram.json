@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "author": "Zulkipli Siregar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-s3-devkitc-1", "id": "esp", "top": 10, "left": 20, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": -44.86,
+      "left": -297.37,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": -100, "left": 160, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led2", "top": -100, "left": 200, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "led3", "top": -100, "left": 240, "attrs": { "color": "blue" } },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": 0, "left": 300, "attrs": { "volume": "0.2" } },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 265.4,
+      "left": -268.8,
+      "attrs": { "color": "green", "key": "a" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 313.4,
+      "left": -268.8,
+      "attrs": { "color": "green", "key": "s" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 382.7, "left": 67, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 54.8,
+      "left": -400.4,
+      "rotate": 180,
+      "attrs": {}
+    },
+    { "type": "wokwi-a4988", "id": "drv1", "top": 100, "left": 200, "attrs": {} },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "stepper1",
+      "top": 22.18,
+      "left": 449.59,
+      "rotate": 90,
+      "attrs": { "size": "18", "arrow": "Blue" }
+    },
+    {
+      "type": "wokwi-ky-040",
+      "id": "encoder1",
+      "top": 320.6,
+      "left": 305.1,
+      "rotate": 270,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:17", "oled1:SDA", "cyan", [ "h-120", "v-173.38", "h-135.55" ] ],
+    [ "esp:18", "oled1:SCL", "yellow", [ "h-100", "v-192.58", "h-165.38" ] ],
+    [ "esp:3V3.1", "oled1:VCC", "red", [ "h-80", "v-106.18", "h-194.83" ] ],
+    [ "esp:GND.1", "oled1:GND", "black", [ "h-60", "v-317.38", "h-224.28" ] ],
+    [ "esp:6", "led1:A", "green", [ "h60", "v-134.98", "h99.92" ] ],
+    [ "esp:12", "led2:A", "green", [ "h70.92", "v-230.98", "h129" ] ],
+    [ "esp:19", "led3:A", "green", [ "h100", "v-221.38", "h53.57" ] ],
+    [ "esp:GND.2", "led1:C", "black", [ "h40", "v0" ] ],
+    [ "esp:GND.2", "led2:C", "black", [ "h60", "v-77.38", "h43.57" ] ],
+    [ "esp:GND.2", "led3:C", "black", [ "h80", "v-58.18", "h63.57" ] ],
+    [ "esp:11", "bz1:2", "green", [ "v-0.58", "h311.92" ] ],
+    [ "esp:GND.1", "bz1:1", "black", [ "h-60", "v-144.58", "h361.92" ] ],
+    [ "esp:7", "btn1:1.r", "blue", [ "h-100", "v200" ] ],
+    [ "esp:9", "btn2:1.r", "purple", [ "h-80", "v220" ] ],
+    [ "esp:GND.1", "btn1:2.r", "black", [ "h-60", "v230" ] ],
+    [ "esp:GND.1", "btn2:2.r", "black", [ "h-40", "v250" ] ],
+    [ "esp:13", "pot1:SIG", "green", [ "h-10", "v268.22", "h90.92" ] ],
+    [ "esp:3V3.1", "pot1:VCC", "red", [ "h-20", "v450.62", "h110.92" ] ],
+    [ "esp:GND.1", "pot1:GND", "black", [ "h-30", "v229.82", "h100.92" ] ],
+    [ "esp:15", "servo1:PWM", "green", [ "h-200", "v-40" ] ],
+    [ "esp:5V", "servo1:V+", "red", [ "h-180", "v-60" ] ],
+    [ "esp:GND.1", "servo1:GND", "black", [ "h-160", "v-80" ] ],
+    [ "esp:4", "drv1:STEP", "green", [ "h120", "v100" ] ],
+    [ "esp:8", "drv1:DIR", "green", [ "h140", "v120" ] ],
+    [ "drv1:ENABLE", "esp:GND.2", "black", [ "h-40", "v20" ] ],
+    [ "drv1:RESET", "drv1:SLEEP", "green", [ "h10", "v10" ] ],
+    [ "drv1:GND.1", "esp:GND.2", "black", [ "v10.48", "h-127.85", "v-143.42" ] ],
+    [ "drv1:MS1", "esp:GND.2", "black", [ "h-20", "v10" ] ],
+    [ "drv1:MS2", "esp:GND.2", "black", [ "h-30", "v20" ] ],
+    [ "drv1:MS3", "esp:GND.2", "black", [ "h-40", "v30" ] ],
+    [ "stepper1:A-", "drv1:2B", "green", [ "h0" ] ],
+    [ "stepper1:A+", "drv1:2A", "green", [ "h0" ] ],
+    [ "stepper1:B+", "drv1:1A", "green", [ "h0" ] ],
+    [ "stepper1:B-", "drv1:1B", "green", [ "h0" ] ],
+    [ "esp:5", "encoder1:CLK", "green", [ "h109.32", "v201.02", "h201.6" ] ],
+    [ "esp:20", "encoder1:DT", "orange", [ "h140", "v57.02", "h94.07" ] ],
+    [ "esp:21", "encoder1:SW", "violet", [ "h160", "v57.02", "h83.67" ] ],
+    [ "esp:3V3.1", "encoder1:VCC", "red", [ "v-48.58", "h339.72", "v260.36", "h-0.4" ] ],
+    [ "esp:GND.1", "encoder1:GND", "black", [ "h205.32", "v-0.58", "h143.2" ] ]
+  ],
+  "dependencies": {}
+}
