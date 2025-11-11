@@ -3,6 +3,7 @@
 **Author:** Zulkipli Siregar_3223600021  
 **Platform:** ESP32-S3 DevKitC  
 **Simulator:** [Wokwi](https://wokwi.com/projects/447248190789876737)  
+<img width="565" height="309" alt="image" src="https://github.com/user-attachments/assets/4c831d3e-1539-446c-9726-d2f2bf399a3e" />
 
 ---
 
