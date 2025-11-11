@@ -139,21 +139,23 @@ void Task_OLED(void *pv) {
 }
 
 // 5) Encoder
+int prevCLK = digitalRead(ENC_CLK);
+int encValue = 0;
+
 void Task_Encoder(void *pv) {
   pinMode(ENC_CLK, INPUT_PULLUP);
   pinMode(ENC_DT, INPUT_PULLUP);
   pinMode(ENC_SW, INPUT_PULLUP);
-  int lastA = digitalRead(ENC_CLK);
-  int cnt = 0;
+
   for (;;) {
-    int a = digitalRead(ENC_CLK);
-    int b = digitalRead(ENC_DT);
-    if (a != lastA) {
-      if (b != a) cnt++; else cnt--;
-      Serial.printf("[ENC] %d | Core %d\n", cnt, xPortGetCoreID());
+    int clk = digitalRead(ENC_CLK);
+    if (clk != prevCLK) { // Deteksi perubahan
+      if (digitalRead(ENC_DT) != clk) encValue++; 
+      else encValue--;
+      Serial.printf("[ENC] %d Core %d\n", encValue, xPortGetCoreID());
     }
-    lastA = a;
-    vTaskDelay(pdMS_TO_TICKS(5));
+    prevCLK = clk;
+    vTaskDelay(1 / portTICK_PERIOD_MS); // cek cepat
   }
 }
 
