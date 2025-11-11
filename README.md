@@ -93,7 +93,7 @@ Ganti core OLED task dengan menekan **kedua tombol** selama 1 detik.
 
 ---
 
-##Task Button
+## **Task Button**
 
 #include <Arduino.h>
 
@@ -144,7 +144,7 @@ https://github.com/user-attachments/assets/0fabaa48-871f-4fb6-a4b9-346515dd2d2e
 
 ---
 
-##Task OLED
+## **Task OLED**
 
 #include <Arduino.h>
 #include <Wire.h>
@@ -199,7 +199,7 @@ https://github.com/user-attachments/assets/644a627e-831d-4ac2-a4f3-e6e8af08a319
 
 ---
 
-##Task LED
+## **Task LED**
 
 #include <Arduino.h>
 
@@ -236,7 +236,7 @@ https://github.com/user-attachments/assets/65c2fcf8-01c4-49fa-9a1b-750d1fa2374e
 
 ---
 
-##Task Buzzer
+## **Task Buzzer**
 
 #include <Arduino.h>
 
@@ -267,7 +267,7 @@ https://github.com/user-attachments/assets/07e4ea76-98ef-48d3-b28c-556dd27f822a
 
 ---
 
-##Task Potentiometer
+## **Task Potentiometer**
 
 #include <Arduino.h>
 
@@ -294,7 +294,7 @@ https://github.com/user-attachments/assets/176d42dd-ba33-4bb5-818d-4073435d4bf3
 
 ---
 
-##Task Servo
+## **Task Servo**
 
 #include <Arduino.h>
 #include <ESP32Servo.h>
@@ -326,7 +326,7 @@ https://github.com/user-attachments/assets/f6424be5-ef3e-4ea0-8945-a8ff33eea754
 
 ---
 
-##Task Stepper
+## **Task Stepper**
 
 #include <Arduino.h>
 
@@ -371,7 +371,7 @@ https://github.com/user-attachments/assets/4c139331-b40e-45a7-9a67-dbf2521fd7ff
 
 ---
 
-##Task Encoder
+## **Task Encoder**
 
 #include <Arduino.h>
 
