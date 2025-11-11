@@ -1,4 +1,4 @@
-# ESP32-S3-TugasRTOS
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1108-18-08-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/509fbf27-14c5-4bcb-86f0-0a5ed21d99a4)# ESP32-S3-TugasRTOS
 
 **Author:** Zulkipli Siregar_3223600021  
 **Platform:** ESP32-S3 DevKitC  
@@ -192,11 +192,11 @@ void TaskOLED(void *pvParameters) {
 
 OLED Core 0 :
 
-https://github.com/user-attachments/assets/40d02e90-66b4-4efb-b445-430853b2c387
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1107-53-54-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/dbf2a56a-8fb6-4365-9d78-a34b8ce0314a)
 
 OLED Core 1 :
 
-https://github.com/user-attachments/assets/644a627e-831d-4ac2-a4f3-e6e8af08a319
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1107-54-40-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/86ef555d-6133-4bdf-8433-a4b90ed763c7)
 
 ---
 
@@ -229,11 +229,11 @@ void TaskLED(void *pvParameters) {
 
 LED Core 0 :
 
-https://github.com/user-attachments/assets/bf544e55-945d-4165-a986-0483cf5a1575
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1107-48-36-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7365105f-4522-48fa-8032-86d45435471a)
 
 LED Core 1 :
 
-https://github.com/user-attachments/assets/65c2fcf8-01c4-49fa-9a1b-750d1fa2374e
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1107-49-39-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/858a0559-b74b-45c7-a2bb-64a16c033549)
 
 ---
 
@@ -260,11 +260,11 @@ void TaskBuzzer(void *pvParameters) {
 
 Buzzer Core 0 :
 
-https://github.com/user-attachments/assets/bb952614-227c-4a63-bb53-b67e7c95150d
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1107-57-45-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/cb1d3fcc-4433-4ad0-9951-5056645b1293)
 
 Buzzer Core 1 :
 
-https://github.com/user-attachments/assets/07e4ea76-98ef-48d3-b28c-556dd27f822a
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1107-58-33-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/c0149449-f143-4613-9929-29d08a4cade6)
 
 ---
 
@@ -287,11 +287,11 @@ void TaskPot(void *pvParameters) {
 
 Potentiometer Core 0 :
 
-https://github.com/user-attachments/assets/348a7344-fff5-428a-b8bd-b96f9abd5b95
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1108-10-12-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9e060917-1d4d-4dd9-88c0-4f578a75ef6f)
 
 Potentiometer Core 1 :
 
-https://github.com/user-attachments/assets/176d42dd-ba33-4bb5-818d-4073435d4bf3
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1108-11-06-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/f542c012-7297-43c6-99b0-c62b8bb17999)
 
 ---
 
@@ -319,11 +319,11 @@ void TaskServo(void *pvParameters) {
 
 Servo Core 0 :
 
-https://github.com/user-attachments/assets/c23c4d7e-3b85-457f-84e6-ab9a65b71eba
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1108-13-15-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7ca48c83-6fe1-4b97-8fea-d1359376b875)
 
 Servo Core 1 :
 
-https://github.com/user-attachments/assets/f6424be5-ef3e-4ea0-8945-a8ff33eea754
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1108-14-31-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/167815e8-c3ac-4d45-bbfd-eee21d0e3d33)
 
 ---
 
@@ -364,11 +364,11 @@ void TaskStepper(void *pvParameters) {
 
 Stepper Core 0 :
 
-https://github.com/user-attachments/assets/2ed69603-097b-47f9-b5a8-25d59236d42b
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1108-16-20-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/eb917aa6-ae91-458c-9b46-cfaa9fc927d5)
 
 Stepper Core 1 :
 
-https://github.com/user-attachments/assets/4c139331-b40e-45a7-9a67-dbf2521fd7ff
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1108-17-17-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1a5b14b8-f255-4bd2-934d-6be3f0414219)
 
 ---
 
@@ -408,8 +408,8 @@ void TaskEncoder(void *pvParameters) {
 
 Encoder Core 0 :
 
-https://github.com/user-attachments/assets/fb4730ef-65cc-4c5e-a816-a08bbd19a2e7
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1108-18-08-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/05f58109-d4f6-4678-8168-fede5f8f4d29)
 
 Encoder Core 1 :
 
-https://github.com/user-attachments/assets/a2f98fec-7364-4605-8458-1eee8f4e7ffa
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1108-19-22-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/c447b5a2-3f27-4178-8297-5f067c6f4282)
