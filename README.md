@@ -54,4 +54,54 @@ Ganti core OLED task dengan menekan **kedua tombol** selama 1 detik.
 
 ---
 
-## **Struktur Proyek**
+## **Task & Fungsinya**
+
+### 1. **Button Task**
+- **Fungsi:** Membaca status **Button1** dan **Button2** secara terus-menerus.  
+- **Core:** Button1 di Core 0, Button2 di Core 1  
+- **Fitur tambahan:**  
+  - Jika kedua tombol ditekan bersamaan >1 detik → **minta swap task OLED ke core lain**  
+- **Output:** Status tombol tampil di **Serial Monitor**  
+
+### 2. **OLED Task**
+- **Fungsi:** Menampilkan informasi status sistem: tombol, encoder, potentiometer, servo, dan stepper.  
+- **Core:** Bisa di-core 0 atau 1 (dapat di-swap dengan tombol).  
+- **Penggunaan mutex:** Untuk menghindari konflik akses display saat swap core.  
+
+### 3. **LEDs Task**
+- **Fungsi:** Mengatur LED1, LED2, LED3  
+  - LED1: brightness tergantung potensiometer  
+  - LED2: inverse LED1  
+  - LED3: blinking sebagai indikator status  
+- **Core:** Tidak dipin khusus, FreeRTOS scheduler memilih core.  
+
+### 4. **Buzzer Task**
+- **Fungsi:**  
+  - Beep saat tombol atau encoder ditekan  
+  - Nada berbeda untuk Button1 dan Button2  
+- **Core:** Tidak dipin khusus  
+
+### 5. **Pot + Servo Task**
+- **Fungsi:**  
+  - Membaca nilai potensiometer  
+  - Memetakan nilai potensiometer ke sudut servo (0-180°)  
+  - Mengatur kecepatan stepper berdasarkan potensiometer  
+- **Core:** Tidak dipin khusus  
+
+### 6. **Encoder Task**
+- **Fungsi:** Membaca rotary encoder (KY-040)  
+  - Mengubah posisi stepper (arah & kecepatan)  
+  - Membaca tombol encoder  
+- **Core:** Tidak dipin khusus  
+
+### 7. **Stepper Task**
+- **Fungsi:** Menggerakkan stepper melalui driver A4988  
+  - Mengatur arah & kecepatan sesuai nilai dari encoder atau potensiometer  
+- **Core:** Tidak dipin khusus  
+
+### 8. **Orchestrator (loop)**
+- **Fungsi:**  
+  - Memantau permintaan swap OLED  
+  - Menghentikan task OLED lama, kemudian membuat task OLED baru di core berbeda  
+
+---
