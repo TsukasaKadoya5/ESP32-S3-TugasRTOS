@@ -140,7 +140,8 @@ void TaskButton(void *pvParameters) {
   }
 }
 
-https://github.com/user-attachments/assets/0fabaa48-871f-4fb6-a4b9-346515dd2d2e
+![Wokwi-OnlineESP32STM32ArduinoSimulator-GoogleChrome2025-11-1107-51-06-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/c792e11f-deba-4612-9ae8-aca4ec17ec8d)
+
 
 ---
 
